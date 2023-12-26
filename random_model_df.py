@@ -4,9 +4,9 @@ import pandas as pd
 pd.set_option('display.float_format', '{:.2f}'.format)
 
 class Risk:
-    risk_started_amount = 50
-    first_n_losses = 9
-    rr = 2
+    risk_started_amount = 50 #started dollar amount
+    first_n_losses = 9 #number of consecutive losses
+    rr = 2 #risk-reward ratio
 
     def total_drawdown(self, x):
         total_drawdown = 0
